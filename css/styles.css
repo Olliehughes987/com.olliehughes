@@ -1,0 +1,280 @@
+/* MOBILE AND GLOBAL STYLES */
+
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+:root {
+  --orange: #E27D60;
+  --blue: #85cdcb;
+  --coral: #E8A87C;
+  --purple: #C38D9E;
+  --cyan: #41B3A3;
+}
+
+html {
+  font-size: 4.5vw;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff1e5;
+  margin: 0;
+}
+
+h1, h2, h3, header {
+  font-family: 'Kiwi Maru', serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+header, .header-top .container {
+  height: 3rem;
+}
+
+.header-top {
+  background-color: var(--cyan);
+  color: white;
+}
+
+.header-top .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.grid-container, .routineGrid, .column{
+  max-height: none;
+  height: auto;
+}
+
+.logo, #menuToggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.2rem;
+}
+
+.logo {
+  padding-left: 0.65rem;
+}
+
+#panelOpener {
+  font-size: 2.5rem;
+  justify-content: center;
+}
+
+.workout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#panel {
+  opacity: 0;
+  width: 100%;
+  color: blue;
+}
+
+#panel.panel--open {
+  opacity: 100;
+}
+
+.active, .workoutDisplay:hover {
+  background-color: red;
+}
+
+nav {
+  position: relative;
+  z-index: 999;
+  background-color: rgba(133, 205, 203, 0.85);
+  -webkit-backdrop-filter: blur(0.25rem);
+  backdrop-filter: blur(0.25rem);
+  font-size: 1.5rem;
+}
+
+nav .container {
+  transition: max-height 0.3s ease-in;
+  overflow: hidden;
+  max-height: 0;
+}
+
+nav.menu--open .container {
+  transition-timing-function: ease-out;
+  max-height: 12rem;
+}
+
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #674a53;
+  padding: 0.2rem 0.65rem;
+}
+
+#menuToggler {
+  flex-basis: 3rem;
+  line-height: 0;
+  font-size: 2.5rem;
+}
+
+main {
+  margin: 0 1rem;
+}
+
+
+#image-left, #image-right, #image-middle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 15rem;
+  width: 100%;
+}
+
+#routineGrid {
+  display: block;
+  max-width: 100px;
+}
+
+
+
+#routineGrid input{
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  border-color: grey;
+  border-style: solid;
+  background-color: #ffe4cc;
+  height: 2rem;
+  width: 15rem;
+  font-size: 1.5rem;
+}
+
+#addText {
+  padding: 0.5rem;
+}
+
+#delText {
+  padding: 0.5rem;
+  padding-left: 0.65rem;
+  padding-right: 0.65rem;
+}
+
+
+}
+
+
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) {
+
+  html {
+    font-size: 1000%;
+  }
+
+
+  #routineGrid {
+    display: block;
+    max-width: 100px;
+  }
+
+  #routineGrid input{
+    padding-top: 1rem;
+    margin-top: 1rem;;
+  }
+
+  #addText {
+    padding: 2rem;
+  }
+
+  #delText {
+    padding: 1rem;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+  }
+
+}
+
+
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+
+  /* applies to screens wider than 999px */
+
+
+  html {
+    font-size: 100%;
+  }
+
+  header {
+    height: auto;
+  }
+
+  article, section {
+    clear: both;
+  }
+
+
+  #menuToggler {
+    display: none;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+
+
+  nav .container {
+    display: flex;
+    align-items: center;
+    max-height: none;
+    overflow: auto;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+
+  nav a:hover {
+    background-color: #72c5c4;
+  }
+
+  #image-left {
+    float: left;
+    padding-right: 1rem;
+  }
+
+  #image-right {
+    float: right;
+    padding-right: 1rem;
+  }
+
+  #image-middle {
+    align-content: center;
+    position: relative;
+  }
+
+  #image-left, #image-middle, #image-right {
+    height: 15rem;
+    width: 18rem;
+  }
+
+  #routineGrid {
+    display: block;
+    max-width: 100px;
+  }
+
+  #routineGrid input{
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;;
+  }
+
+}
