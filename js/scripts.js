@@ -8,6 +8,4 @@ menuToggler.addEventListener('click', event => {
   menu.classList.toggle('menu--open');
 });
 
-panelOpener.addEventListener('click', event => {
-  panel.classList.toggle('panel--open');
-});
+
