@@ -8,4 +8,6 @@ menuToggler.addEventListener('click', event => {
   menu.classList.toggle('menu--open');
 });
 
-
+display.addEventListener('click', event => {
+  console.log("test");
+});

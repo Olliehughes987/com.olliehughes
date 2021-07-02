@@ -72,10 +72,16 @@ main.container {
   padding-left: 0.65rem;
 }
 
+#display {
+  padding-top: 3rem;
+}
+#display img {
+  width: 100%;
+}
+
 .footer {
   display: flex;
   justify-content: center;
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
