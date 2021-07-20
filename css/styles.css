@@ -13,14 +13,13 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #fff1e5;
   margin: 0;
 }
 
 h1, h2, h3, header {
   font-family: 'Kiwi Maru', serif;
 }
-
+s
 h1 {
   font-size: 2em;
 }
@@ -34,7 +33,7 @@ header, .header-top .container {
 }
 
 .header-top {
-  background-color: var(--darkgrey);
+  background-color:white;
   color: var(white);
 }
 
@@ -55,57 +54,18 @@ main.container {
   padding-bottom: 0.2rem;
 }
 
-.login {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 0.7em;
-}
-
-.login a {
-  display: block;
-  text-decoration: none;
-  color: black;
-  padding: 0.2rem 0.65rem;
-}
 
 .logo {
   padding-left: 0.65rem;
 }
 
-#display {
-  padding-top: 3rem;
-}
-#display img {
-  width: 100%;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 1rem;
-  height: 2rem;
-  background-color: var(--darkgrey);
-}
-
-.footer a {
-  display: block;
-  text-decoration: none;
-  color: black;
-  padding: 0.2rem 0.65rem;
-}
 nav {
   position: relative;
   z-index: 999;
-  background-color: var(--grey);
   -webkit-backdrop-filter: blur(0.25rem);
   backdrop-filter: blur(0.25rem);
   font-size: 1.5rem;
 }
-
-
 
 nav .container {
   transition: max-height 0.3s ease-in;
@@ -122,7 +82,7 @@ nav.menu--open .container {
 nav a {
   display: block;
   text-decoration: none;
-  color: #674a53;
+  color: #0000ff;
   padding: 0.2rem 0.65rem;
 }
 
@@ -130,6 +90,28 @@ nav a {
   flex-basis: 3rem;
   line-height: 0;
   font-size: 2.5rem;
+}
+
+.portrait {
+  text-align: center;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 2rem;
+  background-color: var(--darkgrey);
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  padding: 0.2rem 0.65rem;
 }
 
 main {
