@@ -57,6 +57,24 @@ main.container {
 
 }
 
+.portrait {
+  margin-top: 3rem;
+  height: 100%;
+}
+
+.portrait img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 50%;
+
+  background: url(img/tiger.png) no-repeat;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
 
 .logo {
   padding-left: 0.65rem;
@@ -108,7 +126,7 @@ nav a {
   background-color: var(--darkgrey);
 }
 
-.footer a {
+.footer div {
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -148,7 +166,6 @@ main {
 
 
 
-
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
@@ -180,14 +197,24 @@ main {
     clear: both;
   }
 
+  nav {
+    position: relative;
+  }
+
 
   #menuToggler {
     display: none;
   }
 
+
   .container {
     max-width: 900px;
     margin: 0 auto;
+  }
+
+  .altContainer .container {
+    max-width: 100%;
+    width: 100%;
   }
 
   nav .container {
@@ -216,5 +243,18 @@ main {
     margin: 0.5rem;
     
   }
+
+  .portrait {
+    margin-top: 3rem;
+    height: 100%;
+  }
+
+  .portrait img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
 
 }
