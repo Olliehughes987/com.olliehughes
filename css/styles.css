@@ -47,7 +47,7 @@ main .container {
   z-index: 888;
 }
 
-main .container:nth-of-type(even) {
+section:nth-of-type(even) {
   background: whitesmoke;
 }
 
@@ -164,9 +164,6 @@ nav a {
   flex: 1;
 }
 
-main {
-  margin: 0 1rem;
-}
 
 
 
@@ -242,8 +239,8 @@ main {
   
   
   .flex-grid img {
-    width: 30rem;
-    height: 20rem;
+    width: 27em;
+    height: 20em;
     margin: 0.5rem;
     
   }
