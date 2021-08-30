@@ -132,7 +132,7 @@ nav img {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .grid .project {
@@ -143,8 +143,10 @@ nav img {
   margin: 2rem;
   padding: 1rem;
   border-radius: 1rem;
-  border: lightgrey;
+  border: white;
   border-style: solid;
+  height: 23rem;
+  width: 23rem;
 }
 
 .project p, h2 {
@@ -153,7 +155,8 @@ nav img {
 
 .grid img {
   margin-top: 1rem;
-  width: 20rem;
+  width: 22rem;
+  height: 18rem;
 }
 
 
