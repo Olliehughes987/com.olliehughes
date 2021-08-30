@@ -5,6 +5,7 @@
 :root {
   --grey: #949494;
   --darkgrey: #4A4A4A;
+  --darkblue: #0000ff;
 }
 
 html {
@@ -61,6 +62,8 @@ section:nth-of-type(even) {
 
 }
 
+
+
 .portrait {
   margin-top: 3rem;
   height: 100%;
@@ -109,8 +112,13 @@ nav.menu--open .container {
 nav a {
   display: block;
   text-decoration: none;
-  color: #0000ff;
+  color: --var(darkblue);
   padding: 0.2rem 0.65rem;
+}
+
+nav img {
+  height: 5rem;
+  padding-right: 2em;
 }
 
 #menuToggler {
@@ -118,7 +126,6 @@ nav a {
   line-height: 0;
   font-size: 2.5rem;
 }
-
 
 
 .footer {
@@ -164,8 +171,20 @@ nav a {
   flex: 1;
 }
 
-
-
+#blinking{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
 
 /* TABLET STYLES */
 
@@ -230,7 +249,8 @@ nav a {
   }
 
   nav a:hover {
-    background-color: #72c5c4;
+    background-color: var(--darkblue);
+    color: white;
   }
 
   .flex-grid {
