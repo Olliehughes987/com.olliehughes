@@ -177,7 +177,6 @@ header, .header-top .container {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    position: absolute;
     background-color: var(--light);
     top: 0px;
     right: 0px;
