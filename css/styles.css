@@ -40,7 +40,6 @@ header, .header-top .container {
 .socialmedia {
   display: flex;
   justify-content: center;
-  margin-left: 20%;
 }
 
 .icons {
@@ -50,9 +49,9 @@ header, .header-top .container {
 }
 
 .portrait {
+  justify-content: center;
+  flex-grow: 1;
   height: 50rem;
-  width: 80%;
-  height: 100vh;
 }
 
 .portrait h1 {
@@ -62,7 +61,6 @@ header, .header-top .container {
   white-space: nowrap;
   margin-bottom: 0.5rem;
   margin-top: 10vh;
-  margin-left: 20%;
 }
 
 .portrait h2 {
@@ -71,7 +69,6 @@ header, .header-top .container {
   font-size: 1rem;
   white-space: nowrap;
   margin-bottom: 0.5rem;
-  margin-left: 20%;
 }
 
 
@@ -82,7 +79,6 @@ header, .header-top .container {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  margin-left: 20%;
 }
 
 .right {
