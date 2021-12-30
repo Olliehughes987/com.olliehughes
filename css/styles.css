@@ -37,6 +37,17 @@ header, .header-top .container {
   background-color: var(--light)
 }
 
+.socialmedia {
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
 .portrait {
   height: 50rem;
   width: 80%;
@@ -49,19 +60,19 @@ header, .header-top .container {
   font-size: 3rem;
   white-space: nowrap;
   margin-bottom: 0.5rem;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 .portrait h2 {
   text-align: center;
-  color: grey;
+  color: #808080;
   font-size: 1.5rem;
   white-space: nowrap;
   margin-bottom: 0.5rem;
 }
 
 
-.portrait img {
+.port {
   display: block;
   margin-left: auto;
   margin-right: auto;
