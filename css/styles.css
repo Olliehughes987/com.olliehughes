@@ -146,20 +146,6 @@ header, .header-top .container {
 }
 
 
-/* TABLET STYLES */
-
-@media screen and (min-width: 500px) {
-
-  .port {
-    margin-left: 40%;
-  }
-
-
-
-}
-
-
-
 /* DESKTOP STYLES */
 
 @media screen and (min-width: 1000px) {
@@ -191,7 +177,7 @@ header, .header-top .container {
   .right {
     display: flex;
     background-color: var(--light);
-    width: 18rem;
+    flex-basis: 15rem;
     height: 100vh;
   }
 
