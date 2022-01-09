@@ -29,6 +29,7 @@ header, .header-top .container {
 
 .container {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   background-color: var(--dark);
 }
@@ -81,69 +82,62 @@ header, .header-top .container {
   border-radius: 50%;
 }
 
-.right {
-  width: 0;
-  height: 0;
-}
-
-.navText {
-  font-size: 0rem;
-  width: 0%;
-}
-
-#spacer {
-  height: 0px;
-  width: 0px;
-  margin: 0px;
-  border: none;
-  line-height: 0;
-}
-
-.navText li,.navText a {
-  width: 0%;
-}
-
-.project {
-  border-top: 1rem solid var(--light);
-  width: 100%;
-  height: 97vh;
-  background-color: var(--dark);
-}
-
-
-.project {
+.nav {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 0 0 5rem 0;
 }
 
-.project h2 {
-  color: var(--lightText);
-}
-
-#projectText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#projectText h2,#projectText p,#projectText a{
-  text-align: center;
-  color: var(--lightText);
-  list-style-type: none;
+.nav a {
+  margin: 0 1rem 0 1rem;
   text-decoration: none;
-  font-size: 0.7rem;
-  width: 100%;
+  color: var(--light);
 }
 
-#Phas {
-  display: block;
-  height: 0rem;
-  width: 0rem;
-  margin-top: auto;
-  border-radius: 20%;
-  margin-right: 1rem;
+.spacer {
+  width: 60%;
+  background-color: gray;
 }
+
+.otherContainer {
+  background-image: url("../images/background.png");
+  display: flex;
+  height: 1080px;
+}
+
+.otherContainer h2 {
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+}
+
+.otherContainer p {
+  margin: 0 1rem 0 1rem;
+}
+
+.about {
+  background-color: white;
+  height: 70%;
+  width: 90%;
+  margin: auto auto auto auto;
+  border-style: solid;
+  border-color: lightgrey;
+  border-radius: 25px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.486);
+}
+
+.about p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about a {
+  text-decoration: none;
+  color: var(--dark)
+}
+
+
 
 
 /* DESKTOP STYLES */
@@ -174,13 +168,6 @@ header, .header-top .container {
     margin-left: 0;
   }
 
-  .right {
-    display: flex;
-    background-color: var(--light);
-    flex-basis: 15rem;
-    height: 100vh;
-  }
-
   .project {
     display: flex;
     flex-direction: row;
@@ -202,17 +189,6 @@ header, .header-top .container {
     width: 90%;
   }
 
-  #Phas {
-    display: block;
-    height: 30rem;
-    width: 35rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    border-radius: 20%;
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-
   .port {
     display: block;
     margin-left: auto;
@@ -222,31 +198,41 @@ header, .header-top .container {
     border-radius: 50%;
   }
 
-  
-.navText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--dark);
-  bottom: 30%;
-  font-size: 1.8rem;
+  .spacer {
+    width: 10%;
+    background-color: gray;
   }
 
-  
-.navText li, .navText a {
-  width: 100%;
-  margin: 0px;
-  list-style-type: none;
-  text-decoration: none;
-  color: inherit;
-}
+  .otherContainer {
+    display: flex;
+    height: 1080px;
+  }
 
-#spacer {
-  height: 5px;
-  width: 30px;
-  margin: 0px;
-  background-color: #bdbd69;
-  border: none;
-  line-height: 0;
-}
+  .about {
+    background-color: white;
+    height: 65%;
+    width: 75%;
+    margin: auto auto auto auto;
+    border-style: solid;
+    border-color: lightgrey;
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.301);
+  }
+
+  .about h2 {
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .about p {
+    margin: 0 5rem 1rem 5rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .about a {
+    text-decoration: none;
+    color: var(--dark)
+  }
+
 }
