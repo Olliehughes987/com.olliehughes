@@ -5,10 +5,10 @@ import { Badge } from "@/components/ui/badge"
 import { useInView } from 'react-intersection-observer'
 
 const skills = [
-  { category: "Frontend", items: ["HTML", "CSS", "JavaScript", "React", "Next.js"] },
-  { category: "Backend", items: ["Node.js", "Express", "Python", "Django"] },
-  { category: "Database", items: ["MongoDB", "PostgreSQL", "MySQL"] },
-  { category: "Tools", items: ["Git", "Docker", "AWS", "Figma"] },
+  { category: "Frontend", items: ["HTML", "CSS", "JavaScript", "Tailwind", "Next.js"] },
+  { category: "Backend", items: ["Laravel", "Drupal", "Python", "Django"] },
+  { category: "Database", items: ["MySQL", "SQLlite"] },
+  { category: "Tools", items: ["Git", "Docker", "Vercel", "Figma", "Jira"] },
 ]
 
 export default function Skills() {

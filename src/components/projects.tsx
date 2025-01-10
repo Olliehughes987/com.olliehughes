@@ -8,12 +8,12 @@ import { useInView } from 'react-intersection-observer'
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management.",
-    image: "/placeholder.svg?height=400&width=600",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
-    liveUrl: "#",
-    githubUrl: "#"
+    title: "Phasmophobia Helper",
+    description: "A lightweight tool for use in the video game Phasmophobia. This was a passion project that I created to help me and my friends play the game.",
+    image: "/phas.png",
+    technologies: ["HTML", "CSS", "Javascript"],
+    liveUrl: 'https://olliehughes987.github.io/PhasHelper/',
+    githubUrl: "https://github.com/Olliehughes987/PhasHelper"
   },
   {
     title: "Task Management App",

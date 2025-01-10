@@ -15,17 +15,14 @@ export default function Bio() {
         <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
         <div className="space-y-4 text-lg">
           <p>
-            Hello! I'm Jane Doe, a passionate web developer with over 5 years of experience in creating beautiful, functional, and user-centered digital experiences. I am based in San Francisco, California, and I love turning complex problems into simple, elegant solutions.
+            Hey! I'm Ollie Hughes, a passionate full stack web developer with over 3 years of professional experience in creating beautiful, functional, and user-centered digital experiences. I am based in Bristol UK, and I love turning complex problems into simple, elegant solutions. I specialise in Laravel (8-11) & Drupal (8-11), but enjoy dabbling into NextJS, Typescript and other technologies.
           </p>
           <p>
-            My journey in web development started when I built my first HTML website at the age of 15. Since then, I've been hooked on the power of technology to transform ideas into reality. I graduated with a degree in Computer Science from UC Berkeley and have worked with various startups and established companies to bring their visions to life.
-          </p>
-          <p>
-            When I'm not coding, you can find me hiking in the beautiful California mountains, experimenting with new cooking recipes, or contributing to open-source projects. I'm always eager to learn new technologies and stay up-to-date with the latest web development trends.
+            My journey started with playing around with HTML when i was 15, this very quickly became an obsession with technology in general. I graduated with a Bsc in Computer Science from De Montfort University. 
           </p>
         </div>
         <div className="mt-8 text-center">
-          <Button size="lg" className="transition-transform hover:scale-110">Download Resume</Button>
+          <Button size="lg" className="transition-transform hover:scale-110">Download CV</Button>
         </div>
       </div>
     </section>
