@@ -51,7 +51,7 @@ function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-sm shadow-md' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold transition-transform hover:scale-110">
-          JD
+          OH
         </Link>
         <nav>
           <ul className="flex space-x-4">
@@ -62,7 +62,6 @@ function Header() {
           </ul>
         </nav>
         <div className="flex items-center space-x-4">
-          <ModeToggle />
           <Button variant="outline" asChild className="transition-transform hover:scale-105">
             <a href="https://www.linkedin.com/in/ollie-hughes-3a1719179" target="_blank" rel="noopener noreferrer">
               <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
@@ -71,33 +70,6 @@ function Header() {
         </div>
       </div>
     </header>
-  )
-}
-
-function ModeToggle() {
-  const { setTheme } = useTheme()
-
-  return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon" className="transition-transform hover:scale-110">
-          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">Toggle theme</span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
   )
 }
 
@@ -220,12 +192,6 @@ function Bio() {
         <div className="space-y-4 text-lg">
           <p>
             Hello! I'm Ollie Hughes, a passionate web developer with over 3 years of experience in creating beautiful, functional, and user-centered digital experiences. I am based in Bristol UK, and I love turning complex problems into simple, elegant solutions.
-          </p>
-          <p>
-            My journey in web development started when I built my first HTML website at the age of 15. Since then, I've been hooked on the power of technology to transform ideas into reality. I graduated with a degree in Computer Science from UC Berkeley and have worked with various startups and established companies to bring their visions to life.
-          </p>
-          <p>
-            When I'm not coding, you can find me hiking in the beautiful California mountains, experimenting with new cooking recipes, or contributing to open-source projects. I'm always eager to learn new technologies and stay up-to-date with the latest web development trends.
           </p>
         </div>
         <div className="mt-8 text-center">

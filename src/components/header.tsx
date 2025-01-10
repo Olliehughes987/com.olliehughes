@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
-import { ModeToggle } from "./mode-toggle"
 import { Linkedin } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
@@ -32,7 +31,6 @@ export default function Header() {
           </ul>
         </nav>
         <div className="flex items-center space-x-4">
-          <ModeToggle />
           <Button variant="outline" asChild className="transition-transform hover:scale-105">
             <a href="https://www.linkedin.com/in/ollie-hughes-3a1719179 " target="_blank" rel="noopener noreferrer">
               <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
