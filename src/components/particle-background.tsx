@@ -39,7 +39,7 @@ export default function ParticleBackground() {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 75,
               duration: 0.4,
             },
           },
