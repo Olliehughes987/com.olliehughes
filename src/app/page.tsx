@@ -189,6 +189,7 @@ function Hero() {
         <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8">
           <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg">
             <Image
+              unoptimized
               src="/portrait.jpg"
               alt="Ollie Hughes"
               fill
